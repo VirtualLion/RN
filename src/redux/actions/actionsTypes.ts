@@ -1,0 +1,1 @@
+export const NAV_DEFAULT: string = 'NAV_DEFAULT';

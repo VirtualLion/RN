@@ -1,0 +1,91 @@
+{
+    "id": "5c39c974f6addc41f992e902",
+    "code": "test_entity",
+    "schema": {
+        "name": {
+            "title": "名称",
+            "componentType": "INPUT",
+            "type": "string",
+            "validators": {
+                "required": true,
+                "minLen": 2,
+                "maxLen": 32,
+                "reg": "^[0-9]{2}[a-z]{3}$"
+            }
+        },
+        "number": {
+            "title": "金额",
+            "componentType": "INPUTNUMBER",
+            "type": "number",
+            "validators": {
+                "required": true
+            }
+        },
+        "date": {
+            "title": "日期",
+            "componentType": "DATEPICKER",
+            "type": "date",
+            "validators": {
+                "required": true
+            }
+        },
+        "erae": {
+            "title": "区域",
+            "componentType": "SELECT",
+            "type": "string",
+            "option": {
+                "data": [
+                    {
+                        "label": "北京",
+                        "value": "BEIJING"
+                    }, {
+                        "label": "上海",
+                        "value": "SHANGHAI"
+                    }
+                ],
+                "api": "",
+                "label": "",
+                "value": ""
+            },
+            "validators": {
+                "required": true
+            }
+        },
+        "tags": {
+            "title": "标签",
+            "componentType": "SELECT_MUTIPLE",
+            "type": "number",
+            "option": {
+                "data": [
+                    {
+                        "value": 1,
+                        "label": "金融"
+                    }, {
+                        "value": 2,
+                        "label": "互联网"
+                    }, {
+                        "value": 3,
+                        "label": "社交"
+                    }
+                ],
+                "api": "",
+                "label": "",
+                "value": ""
+            },
+            "validators": {
+                "required": true
+            }
+        },
+        "extra": {
+            "title": "备注",
+            "componentType": "TEXTAREA",
+            "type": "string",
+            "validators": {
+                "required": true
+            }
+        }
+    },
+    "tenantId": 222,
+    "createdAt": "2019-01-12 19:03:16",
+    "updatedAt": "2019-01-12 19:03:16"
+}
